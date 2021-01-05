@@ -16,8 +16,9 @@ for case in range(0, lines_per_case * cases):
 # ------------------------------------
 for test in data:
     array_count,step=test[0].split(' ')
-    rotate_by=int(step)
+    
     array_count=int(array_count)
+    rotate_by=int(step)%array_count
     array=test[1].split(' ')
     done=[]
     for count in range(array_count-rotate_by,array_count):

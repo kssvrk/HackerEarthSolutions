@@ -1,7 +1,7 @@
 from computils.reader import CaseLinePerCase
 
 data=CaseLinePerCase(2, test="array_rotate.txt")
-
+print(data)
 for test in data:
     array_count,step=test[0].split(' ')
     rotate_by=int(step)
